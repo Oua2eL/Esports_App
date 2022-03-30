@@ -1,0 +1,188 @@
+.R6_container {
+  width: 100%;
+  background-image: linear-gradient( rgb(197, 0, 0) , rgb(0, 0, 0) );
+}
+
+.R6_coverpage {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+  url('https://cdn1.dotesports.com/wp-content/uploads/2019/09/28170050/Astralis-ESL-One-New-York.jpg');
+height: 100vh;
+max-height: 350px;
+background-position: center;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+text-align: center;
+padding: 0 1rem;
+}
+.counter-up {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.counter-up::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.counter-up .box_content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box_content .boxstats {
+  width: calc(25% - 30px);
+  border: 1px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.box_content .boxstats .stats-icon{
+  font-size: 48px;
+  color: #fff;
+  align-items: center;
+}
+
+.box_content .boxstats .box_counter {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.box_content .boxstats .box_text {
+  color: #fff;
+  font-weight: 400;
+}
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.playercard {
+  margin-bottom: 2rem;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-image: linear-gradient(  rgb(0, 0, 0) , rgb(197, 0, 0) );
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.playercard:hover {
+  transform: translateX(50%);
+}
+
+.playercard .imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  background: #000;
+  transition: 1s;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.playercard:hover .imgbox  {
+  transform: rotateY(-180deg);
+}
+
+.playercard .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.playercard .imgbox img:nth-child(2) {
+  transform: rotateY(180deg);
+}
+
+.playercard .playerdetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.playercard .playerdetails h1 {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+.playercard .playerdetails h2 {
+  text-align: center;
+  font-weight: 700;
+  line-height: 2em;
+  color: white;
+}
+
+@media (max-width: 1036px){
+  .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  .box_content .boxstats{
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 580px){
+  .box_content .boxstats{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .cardSection {
+    margin: 2rem;
+    font-size: 5px;
+  } 
+  .playercard {
+    width: 200px;
+    height: 280px;
+  }
+  .playercard .playerdetails h1 {
+    font-size: 40px;
+  }
+  .playercard .playerdetails h2 {
+    font-size: 20px;
+  }
+}

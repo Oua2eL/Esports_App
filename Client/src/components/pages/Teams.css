@@ -1,0 +1,70 @@
+.Shopcontainer {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(  rgb(0, 0, 0) , rgb(197, 0, 0) );
+}
+
+.Shopcontainer > div {
+  display: flex;
+  justify-content: center;
+}
+
+.Shopcontainer h1 {
+  padding-top: 35px;
+  color: white;
+  font-size: 55px
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.Shopcontainer .Shop2container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem;
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+}
+
+.Shopcontainer img {
+  width: 95%;
+}
+
+@media screen and (max-width:940px) {
+  .Shopcontainer {
+      margin: 0rem 0;
+  }
+
+  .Shopcontainer > div p {
+      margin: 1rem;
+      font-size: 1rem;
+  }
+
+  .Shopcontainer .Shop2container {
+      grid-template-columns: 1fr;
+      grid-gap: .5rem;
+  }
+}
+.r6cart:hover{
+  transform:scale(1.06);
+  transition: all 0.5s ease-out;
+}
+
+.valorantcart:hover{
+  transform:scale(1.06);
+  transition: all 0.5s ease-out;
+}
+
+.fifacart:hover{
+  transform:scale(1.06);
+  transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 478px) {
+  .Shopcontainer > div p {
+      margin: 0rem .5rem;
+  }
+}

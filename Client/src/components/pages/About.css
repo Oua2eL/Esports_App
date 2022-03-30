@@ -1,0 +1,77 @@
+.training {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(  rgb(0, 0, 0) , rgb(197, 0, 0) );
+}
+
+.training .left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.training .left p {
+    margin: 0;
+    color: white;
+}
+.training .left h1 {
+    margin: 0;
+    color: white;
+}
+.training .left .ctnbtn{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgb(255, 36, 73);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.training .left .ctnbtn:hover{
+    background: white;
+    color: rgb(175, 2, 2);
+    transition: 0.3s ease-in-out;
+}
+
+.training .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .img {
+    max-width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 1140px) {
+    .training {
+        grid-template-columns: 1fr;
+        align-items: center;
+        font-size: 50px;
+    }
+
+    .training .img {
+        max-width: 100%;
+    }
+
+}

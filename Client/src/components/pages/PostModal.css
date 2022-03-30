@@ -1,0 +1,73 @@
+.action{
+    position:absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.action span{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7d6cfc;
+    font-size: 2em;
+    transition: 0.3s ease-in-out;
+}
+
+.action:hover span{
+    transform: rotate(135deg);
+}
+
+.addbutton{
+    background: transparent;
+    color: #503bf1;
+    font-size: 30px;
+}
+
+.action form{
+    position: absolute;
+    bottom: 55px;
+    background: #fff;
+    min-width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+}
+input{
+   width: 250px;
+   height: 35px;
+   margin: 5px;
+}
+.submitbtn{
+    font-size: 0.8rem;
+  padding: 0.6rem 3rem;
+  border: none;
+  background: #ffc500;
+  color: #000;
+  transition: 0.2s ease-out;
+}
+.submitbtn:hover{
+    color: #fff;
+    background: #e31837;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.action.active form{
+    bottom: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}

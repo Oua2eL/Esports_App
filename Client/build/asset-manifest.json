@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8cf7f0a4.chunk.css",
+    "main.js": "/static/js/main.1ff73211.chunk.js",
+    "main.js.map": "/static/js/main.1ff73211.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7f747c99.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7f747c99.js.map",
+    "static/css/2.b8803beb.chunk.css": "/static/css/2.b8803beb.chunk.css",
+    "static/js/2.325b36a1.chunk.js": "/static/js/2.325b36a1.chunk.js",
+    "static/js/2.325b36a1.chunk.js.map": "/static/js/2.325b36a1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6813a3e66b6b81bc866fd641f2f47588.js": "/precache-manifest.6813a3e66b6b81bc866fd641f2f47588.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.b8803beb.chunk.css.map": "/static/css/2.b8803beb.chunk.css.map",
+    "static/css/main.8cf7f0a4.chunk.css.map": "/static/css/main.8cf7f0a4.chunk.css.map",
+    "static/js/2.325b36a1.chunk.js.LICENSE.txt": "/static/js/2.325b36a1.chunk.js.LICENSE.txt",
+    "static/media/img1.jpg": "/static/media/img1.988bf374.jpg",
+    "static/media/img2.png": "/static/media/img2.4ffae677.png",
+    "static/media/img3.jpg": "/static/media/img3.e3983378.jpg",
+    "static/media/img4.jpg": "/static/media/img4.290ca24f.jpg",
+    "static/media/img5.png": "/static/media/img5.50e822d1.png",
+    "static/media/teamfifa.jpg": "/static/media/teamfifa.75010fc1.jpg",
+    "static/media/teamr6.jpeg": "/static/media/teamr6.05e68a0a.jpeg",
+    "static/media/teamvalorant.jpg": "/static/media/teamvalorant.594d5cb8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f747c99.js",
+    "static/css/2.b8803beb.chunk.css",
+    "static/js/2.325b36a1.chunk.js",
+    "static/css/main.8cf7f0a4.chunk.css",
+    "static/js/main.1ff73211.chunk.js"
+  ]
+}

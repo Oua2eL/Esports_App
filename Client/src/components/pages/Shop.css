@@ -1,0 +1,22 @@
+.shop_container{
+    display: grid;
+    width: 100%;
+    /* height: 100vh; */
+    grid-template-columns: repeat(3,1fr);
+    background-image: linear-gradient(  rgb(0, 0, 0) , rgb(197, 0, 0) );
+}
+
+
+@media screen and (max-width:940px) {
+    .shop_wrapper {
+        margin: 1rem ;
+    }
+  
+    .cart {
+        margin: 1rem;
+    }
+    .shop_container {
+        margin: 0rem 0rem 0rem ;
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
